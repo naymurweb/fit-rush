@@ -1,5 +1,6 @@
 /* google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 /* default reset */
 * {
@@ -25,9 +26,12 @@ body {
 }
 
 .spacing {
-  margin: 80px 0;
+  margin: 100px 0;
 }
 
+img {
+  width: 100%;
+}
 /* Typography */
 h1 {
   font-size: 4.6rem;
@@ -78,6 +82,129 @@ p {
   border: none;
   border: none;
   text-align: center;
+}
+
+/* header section */
+
+/* navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.logo h2 {
+  font-size: 2.25rem;
+  color: var(--primary);
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  padding: 12px;
+}
+
+.nav-items li {
+  list-style: none;
+}
+
+.nav-items li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.25em;
+}
+
+#select-nav {
+  background-color: var(--primary);
+  color: rgb(255, 255, 255);
+  padding: 8px 20px;
+  border-radius: 42px;
+  cursor: pointer;
+  font-weight: 600;
+  border: none;
+  border: none;
+  text-align: center;
+}
+
+/* banner */
+
+.banner {
+  display: flex;
+  gap: 70px;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.banner-content #style-text {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+}
+
+.banner-content p {
+  margin: 28px 0;
+}
+
+.button-container {
+  display: flex;
+  gap: 15px;
+}
+
+.border-button {
+  background-color: transparent;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.banner-image {
+  position: relative;
+}
+
+.banner-image img {
+  width: 350px;
+}
+.bage1 {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 16px 22px;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 100px;
+  left: 220px;
+}
+
+.bage2 {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(48, 48, 48, 0.54);
+  padding: 16px 22px;
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: absolute;
+  left: -50px;
+  top: 420px;
+}
+
+.bage2 h2 {
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.bage2 .boll {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: var(--primary);
+}
+
+.bage1,
+.bage2 span {
+  color: rgba(255, 255, 255, 0.65);
 }
 
 /* small device responsive */
