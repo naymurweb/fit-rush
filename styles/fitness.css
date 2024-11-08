@@ -252,6 +252,21 @@ p {
   margin-bottom: 6px;
 }
 
+/* run section */
+.run {
+  background-color: var(--secondary);
+  border-radius: 18px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 150px;
+}
+
+.run-content p {
+  margin-bottom: 40px;
+}
+
 /* medium device responsive */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   h1 {
@@ -282,6 +297,11 @@ p {
 
   .habits-card {
     width: 230px;
+  }
+
+  /* run */
+  .run {
+    gap: 30px;
   }
 }
 
@@ -329,7 +349,13 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .habits-card{
+  .habits-card {
     padding: 50px;
+  }
+
+  /* run */
+  .run {
+    flex-direction: column;
+    gap: 30px;
   }
 }
