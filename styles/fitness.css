@@ -352,6 +352,66 @@ p {
     url("../images/exercise6.jpg");
 }
 
+/* BMI Calculator */
+.bmi-content {
+  text-align: center;
+}
+
+.bmi-box {
+  margin-top: 80px;
+  padding: 50px 0;
+  background-color: var(--secondary);
+}
+
+table {
+  color: white;
+  border-collapse: collapse;
+  margin-top: 50px;
+}
+
+td,
+th {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  text-align: start;
+}
+
+td {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.bmi-container {
+  display: flex;
+}
+
+.boxs {
+  display: flex;
+  gap: 100px;
+}
+
+.bmi-chart {
+  width: 60%;
+}
+form{
+  margin-top: 30px;
+}
+input {
+  padding: 12px 40px 12px 20px;
+  width: 282.5px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  outline: none;
+  margin: 10px;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  margin-left: 0;
+}
+input#last {
+  width: 587px;
+  margin-bottom: 40px;
+}
+
 /* medium device responsive */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   h1 {
