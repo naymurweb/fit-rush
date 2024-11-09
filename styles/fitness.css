@@ -15,7 +15,7 @@ body {
 }
 
 :root {
-  --primary: rgb(230, 83, 60);
+  --primary: rgb(52, 152, 219);
   --secondary: rgb(34, 34, 34);
 }
 
@@ -426,26 +426,39 @@ input#last {
   display: flex;
   align-items: end;
   padding: 20px;
-  background-image: url("../images/trainer1.png");
+  background-image: linear-gradient(
+    to top, #000000ef, #3498db50
+  ), url("../images/trainer1.png");
   width: 325px;
   height: 272px;
   background-size: cover;
   border-radius: 18px;
 }
 .team-card-2 {
-  background-image: url("../images/trainer2.png");
+  background-image: linear-gradient(
+    to top, #000000ef, #3498db50
+  ), url("../images/trainer2.png");
 }
 .team-card-3 {
-  background-image: url("../images/trainer3.png");
+  background-image: linear-gradient(
+    to top, #000000ef, #3498db50
+  ), url("../images/trainer3.png");
+  
 }
 .team-card-4 {
-  background-image: url("../images/trainer4.png");
+  background-image: linear-gradient(
+    to top, #000000ef, #3498db50
+  ), url("../images/trainer4.png");
 }
 .team-card-5 {
-  background-image: url("../images/trainer5.png");
+  background-image: linear-gradient(
+    to top, #000000ef, #3498db50
+  ), url("../images/trainer5.png");
 }
 .team-card-6 {
-  background-image: url("../images/trainer6.png");
+  background-image: linear-gradient(
+    to top, #000000ef, #3498db50
+  ), url("../images/trainer6.png");
 }
 .team-card h5 {
   background-color: white;
