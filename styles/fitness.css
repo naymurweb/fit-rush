@@ -252,6 +252,10 @@ p {
   margin-bottom: 6px;
 }
 
+.habits-content {
+  text-align: center;
+}
+
 /* run section */
 .run {
   background-color: var(--secondary);
@@ -412,6 +416,62 @@ input#last {
   margin-bottom: 40px;
 }
 
+/* our team */
+.team-card-1,
+.team-card-2,
+.team-card-3,
+.team-card-4,
+.team-card-5,
+.team-card-6 {
+  display: flex;
+  align-items: end;
+  padding: 20px;
+  background-image: url("../images/trainer1.png");
+  width: 325px;
+  height: 272px;
+  background-size: cover;
+  border-radius: 18px;
+}
+.team-card-2 {
+  background-image: url("../images/trainer2.png");
+}
+.team-card-3 {
+  background-image: url("../images/trainer3.png");
+}
+.team-card-4 {
+  background-image: url("../images/trainer4.png");
+}
+.team-card-5 {
+  background-image: url("../images/trainer5.png");
+}
+.team-card-6 {
+  background-image: url("../images/trainer6.png");
+}
+.team-card h5 {
+  background-color: white;
+}
+
+.team-card img {
+  width: 100%;
+}
+
+.team-card .content {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+}
+
+.teams-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 18px;
+  background-color: var(--secondary);
+}
+
 /* medium device responsive */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   h1 {
@@ -452,6 +512,16 @@ input#last {
   /* BMI Calculator */
   .boxs {
     flex-direction: column;
+  }
+
+  /* our team */
+  .team-card-1,
+  .team-card-2,
+  .team-card-3,
+  .team-card-4,
+  .team-card-5,
+  .team-card-6 {
+    width: 200px;
   }
 }
 
