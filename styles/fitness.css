@@ -267,6 +267,91 @@ p {
   margin-bottom: 40px;
 }
 
+/* exercises */
+
+.exersises-images {
+  margin-top: 50px;
+}
+
+.exersises-images p {
+  color: white;
+  font-weight: bold;
+}
+
+.exersises-images-top,
+.exersises-images-buttom {
+  display: grid;
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  height: 200px;
+  text-align: end;
+}
+
+.exersises-images-buttom {
+  grid-template-columns: 2fr 1fr 2fr;
+}
+
+.exexsises1,
+.exexsises2,
+.exexsises3,
+.exexsises4,
+.exexsises5,
+.exexsises6 {
+  background-image: linear-gradient(
+      rgba(7, 250, 157, 0.5),
+      rgba(5, 46, 30, 0.5)
+    ),
+    url("../images/exercise1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+.exexsises4 {
+  text-align: right;
+}
+.exexsises2 {
+  text-align: center;
+}
+.exexsises5,
+.exexsises1,
+.exexsises3 {
+  display: flex;
+  align-items: flex-end;
+}
+
+.exexsises2 {
+  background-image: linear-gradient(rgba(250, 7, 60, 0.5), rgba(36, 5, 46, 0.5)),
+    url("../images/exercise2.png");
+}
+
+.exexsises3 {
+  background-image: linear-gradient(rgba(22, 17, 18, 0.5), rgba(36, 5, 46, 0.5)),
+    url("../images/exercise3.png");
+}
+.exexsises4 {
+  background-image: linear-gradient(rgba(22, 17, 18, 0.5), rgba(36, 5, 46, 0.5)),
+    url("../images/exercise4.png");
+}
+.exexsises5 {
+  background-image: linear-gradient(
+      rgba(76, 250, 7, 0.5),
+      rgba(22, 78, 11, 0.5)
+    ),
+    url("../images/exercise5.jpg");
+}
+.exexsises6 {
+  background-image: linear-gradient(
+      rgba(7, 201, 250, 0.5),
+      rgba(5, 46, 46, 0.5)
+    ),
+    url("../images/exercise6.jpg");
+}
+
 /* medium device responsive */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   h1 {
@@ -357,5 +442,22 @@ p {
   .run {
     flex-direction: column;
     gap: 30px;
+  }
+
+  /* exersises */
+  .exexsises3 {
+    display: none;
+  }
+
+  .exexsises6 {
+    display: none;
+  }
+
+  .exersises-images-top {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .exersises-images-buttom {
+    grid-template-columns: 2fr 1fr;
   }
 }
