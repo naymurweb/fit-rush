@@ -426,39 +426,32 @@ input#last {
   display: flex;
   align-items: end;
   padding: 20px;
-  background-image: linear-gradient(
-    to top, #000000ef, #3498db50
-  ), url("../images/trainer1.png");
+  background-image: linear-gradient(to top, #000000ef, #3498db50),
+    url("../images/trainer1.png");
   width: 325px;
   height: 272px;
   background-size: cover;
   border-radius: 18px;
 }
 .team-card-2 {
-  background-image: linear-gradient(
-    to top, #000000ef, #3498db50
-  ), url("../images/trainer2.png");
+  background-image: linear-gradient(to top, #000000ef, #3498db50),
+    url("../images/trainer2.png");
 }
 .team-card-3 {
-  background-image: linear-gradient(
-    to top, #000000ef, #3498db50
-  ), url("../images/trainer3.png");
-  
+  background-image: linear-gradient(to top, #000000ef, #3498db50),
+    url("../images/trainer3.png");
 }
 .team-card-4 {
-  background-image: linear-gradient(
-    to top, #000000ef, #3498db50
-  ), url("../images/trainer4.png");
+  background-image: linear-gradient(to top, #000000ef, #3498db50),
+    url("../images/trainer4.png");
 }
 .team-card-5 {
-  background-image: linear-gradient(
-    to top, #000000ef, #3498db50
-  ), url("../images/trainer5.png");
+  background-image: linear-gradient(to top, #000000ef, #3498db50),
+    url("../images/trainer5.png");
 }
 .team-card-6 {
-  background-image: linear-gradient(
-    to top, #000000ef, #3498db50
-  ), url("../images/trainer6.png");
+  background-image: linear-gradient(to top, #000000ef, #3498db50),
+    url("../images/trainer6.png");
 }
 .team-card h5 {
   background-color: white;
@@ -483,6 +476,48 @@ input#last {
   padding: 20px;
   border-radius: 18px;
   background-color: var(--secondary);
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--secondary);
+  padding: 60px 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col-1 {
+  width: 40%;
+}
+.col-1 h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.col-2 h3,
+.col-3 h3 {
+  margin-bottom: 30px;
+}
+
+.col-2 p,
+.col-3 p {
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 40px 0;
+  width: 100%;
+}
+.reserved {
+  text-align: center;
 }
 
 /* medium device responsive */
@@ -618,6 +653,15 @@ input#last {
     flex-direction: column;
   }
   .bmi-chart {
+    width: 100%;
+  }
+
+  /* footer */
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .col-1 {
     width: 100%;
   }
 }
