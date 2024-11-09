@@ -520,6 +520,37 @@ hr {
   text-align: center;
 }
 
+/* Pricing plans */
+
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+.pricing-card {
+  width: 340px;
+  background-color: var(--secondary);
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.pricing-card h3 {
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: var(--primary);
+}
+.pricing-card .pra {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.pricing-card .h-pra {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 /* medium device responsive */
 @media screen and (min-width: 576px) and (max-width: 992px) {
   h1 {
@@ -570,6 +601,11 @@ hr {
   .team-card-5,
   .team-card-6 {
     width: 200px;
+  }
+  /* Pricing plans */
+
+  .pricing-cards {
+    justify-content: flex-start;
   }
 }
 
