@@ -428,7 +428,7 @@ input#last {
   padding: 20px;
   background-image: linear-gradient(to top, #000000ef, #3498db50),
     url("../images/trainer1.png");
-  width: 325px;
+  /* width: 325px; */
   height: 272px;
   background-size: cover;
   border-radius: 18px;
@@ -468,9 +468,8 @@ input#last {
 }
 
 .teams-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   margin-top: 50px;
   padding: 20px;
@@ -692,11 +691,17 @@ hr {
     width: 100%;
   }
 
+  /* our teams */
+  .teams-container {
+    grid-template-columns: 1fr;
+  }
+
   /* footer */
   .footer-container {
     flex-direction: column;
     gap: 20px;
   }
+  
   .col-1 {
     width: 100%;
   }
